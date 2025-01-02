@@ -1,20 +1,19 @@
-import Counter from "./components/Counter";
-import EvenOdd from "./components/EvenOdd";
-import Product from "./components/Product";
-import Test from "./components/Test";
+// import logo from './logo.svg';
+import './App.css';
+import { Component } from 'react';
+import Team from './components/team';
+import Index from './components/index';
+import Service from './components/service';
+import Shop from './components/shop';
+class App extends Component {
 
-const { Component } = require("react");
-
-class App extends Component{
-  render(){
+  render() {
     return <>
-      {/* <Test/> */}
-      {/* <Counter/> 
-      <hr/>
-      <EvenOdd/> */}
-      <Product/>
+      <Index />
+      <Service />
+      <Team />
+      <Shop />
     </>
   }
 }
-
 export default App;
